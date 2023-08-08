@@ -1,3 +1,27 @@
 body {
     background-color: hsl(235, 18%, 26%);
+    margin: 0;
+}
+
+.signupstart {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+
+    display: flex;
+
+}
+
+.left {
+    margin: 25px;
+    width: 50%;
+}
+
+.success {
+    visibility: hidden;
 }
