@@ -34,29 +34,36 @@ h1 {
     
     width: 40%;
     padding: 0 50px 0 50px;
+
+    justify-content:center;
     
+}
+
+.left > h1 {
+    margin: 0;
 }
 
 
 /* uses background image for bullet points to fix alignment issues */
 .left > ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .left > ul > li {
-    margin: 10px 0 10px 0;
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     background-image: url('./assets/images/icon-list.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 25px;
+    margin: 5px 0 5px 0;
 }
 
 .left > form {
     display: flex;
     text-align: center;
     flex-direction: column;
-    gap: 20px;
+    
     
     
 }
@@ -64,6 +71,8 @@ h1 {
 .left > form > label {
     text-align: left;
     display: block;
+    font-size: small;
+    font-weight: bold;
     
 }
 
@@ -84,6 +93,8 @@ h1 {
     border-radius: 5px;
     color: white;
     background-color: hsl(234, 29%, 20%);
+    border: none;
+    margin-top: 20px;
 }
 
 .right {
