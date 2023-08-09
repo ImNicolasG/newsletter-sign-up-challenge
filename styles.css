@@ -23,6 +23,21 @@ body {
     width: 50%;
 }
 
+
+/* uses background image for bullet points to fix alignment issues */
+.left > ul {
+    list-style-type: none;
+}
+
+.left > ul > li {
+    margin: 10px 0 10px 0;
+    padding-left: 2rem;
+    background-image: url('./assets/images/icon-list.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
 .success {
     visibility: hidden;
 }
