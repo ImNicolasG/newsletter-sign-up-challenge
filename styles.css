@@ -68,13 +68,21 @@ h1 {
     
 }
 
-.left > form > label {
+.label1 {
     text-align: left;
-    display: block;
     font-size: small;
     font-weight: bold;
     padding: 0 0 5px 1px;
     
+}
+
+.label2 {
+    text-align: right;
+
+    font-size: small;
+    font-weight: bold;
+    padding: 0 0 5px 1px;
+
 }
 
 .left > form > input {
@@ -88,7 +96,7 @@ h1 {
 
 }
 
-.left > form > a > button {
+.left > form > button {
     width: 100%;
     height: 50px;
     border-radius: 5px;
@@ -99,10 +107,9 @@ h1 {
     transition: all 1s ease-in-out;
 }
 
-.left > form > a > button:hover {
+.left > form > button:hover {
     background-image: linear-gradient(to right, rgb(255, 81, 110), rgb(255, 136, 0));
 }
-
 
 
 .right {

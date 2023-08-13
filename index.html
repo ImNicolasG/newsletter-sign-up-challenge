@@ -34,9 +34,10 @@
         <li>And much more!</li>
       </ul>
       
-      <form>
-        <label>Email Address</label>
-        <input placeholder="email@company.com" type="email">
+      <form name="emailForm" onsubmit="return validateEmail()">
+        <label class="label1">Email address</label>
+        <label class="label2">Valid email required</label>
+        <input class="inputemail" placeholder="email@company.com" type="email" name="email">
         <button class="newbutton" type="submit">Subscribe to monthly newsletter</button>
       </form>
       
