@@ -5,7 +5,9 @@
 function validateEmail() {
     let x = document.forms["emailForm"]["email"].value;
     if (x.includes("@") && x.includes(".com")) {
-        alert("Success!")
+        
+        window.open("success.html");
+        return true
     } else {
         document.querySelector(".inputemail").style.borderColor = "red"
         document.querySelector(".inputemail").style.color = "red"
