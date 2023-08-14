@@ -68,17 +68,19 @@ h1 {
     
 }
 
+
 .label1 {
     text-align: left;
     font-size: small;
     font-weight: bold;
+    float:left;
     padding: 0 0 5px 1px;
     
 }
 
 .label2 {
     text-align: right;
-
+    float: right;
     font-size: small;
     font-weight: bold;
     padding: 0 0 5px 1px;
