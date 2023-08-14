@@ -62,13 +62,12 @@ h1 {
 .left > form {
     display: flex;
     text-align: center;
-    flex-direction: column;
-    
-    
-    
+    flex-direction: column;  
 }
+/*  */
 
 
+/* FOR 2 LABELS ON THE SAME LINE, WRAP THEM IN A SINGLE LABEL FOR 3 TOTAL LABELS */
 .label1 {
     text-align: left;
     font-size: small;
@@ -79,6 +78,8 @@ h1 {
 }
 
 .label2 {
+    visibility: hidden;
+    color: red;
     text-align: right;
     float: right;
     font-size: small;
@@ -86,6 +87,7 @@ h1 {
     padding: 0 0 5px 1px;
 
 }
+/*  */
 
 .left > form > input {
     width: 100%;
