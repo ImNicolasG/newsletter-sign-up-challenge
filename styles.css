@@ -135,14 +135,25 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 60px;
+    padding: 50px 60px 50px 60px;
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
 .success > img {
     height: 60px;
     width: 60px;
+    padding-bottom: 30px;
 }
+
+.successh1 {
+    margin: 0;
+}
+
+.success > p {
+    line-height: 25px;
+}
+
