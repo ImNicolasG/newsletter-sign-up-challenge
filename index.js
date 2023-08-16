@@ -10,6 +10,8 @@ function validateEmail() {
     if (x.includes("@") && x.includes(".com")) {
         
         window.open("success.html");
+        localStorage.setItem("email", x);
+        
         return x;
     } else {
         document.querySelector(".inputemail").style.borderColor = "red"
@@ -21,3 +23,11 @@ function validateEmail() {
     };
     
 };
+
+// uses local storage from validateEmail() so that the saved email can be reused in success message
+document.getElementById("idemail").innerHTML = localStorage.getItem("email") + ".";
+
+
+function closeWindow() {
+    window.close()
+}
