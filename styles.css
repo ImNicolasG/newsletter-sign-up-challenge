@@ -7,6 +7,7 @@ body {
 
 p {
     font-size: 16px;
+    color: hsl(235, 18%, 26%);
 }
 
 h1 {
@@ -44,38 +45,14 @@ h1 {
     
 }
 
+.image-mobile {
+    display: none;
+}
+
 .left > h1 {
     margin: 0;
 }
 
-@media screen and (max-width: 600px) {
-
-    .signupstart {
-        background-color: hsl(0, 0%, 100%);        
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 0;
-        border-radius: 0;
-        transform: none;
-        top: 0%;
-        left: 0%;
-        justify-content:start;
-    }
-
-
-
-    .right {
-        height: 30vh;
-    }
-    .right > img {
-        height: 50%;
-        width: 100vw;
-    }
-    
-}
 
 
 /* uses background image for bullet points to fix alignment issues */
@@ -154,11 +131,14 @@ h1 {
 /* Image */
 .right {
     display: flex;
+    width: 40%;
+    min-height: 100%;
 }
 
-.right > img {
-    max-width: 100%;
-    height: auto;
+.right > .image-desktop {
+    border-radius: 25px;
+    min-width: 100%;
+    object-fit: cover;
 }
 /*  */
 
@@ -201,4 +181,73 @@ h1 {
 
 #idemail {
     font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .signupstart {
+        background-color: hsl(0, 0%, 100%);        
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        border-radius: 0;
+        transform: none;
+        top: 0%;
+        left: 0%;
+        justify-content:start;
+    }
+
+    .left {
+        height: 65vh;
+        padding: 0;
+        width: 90%;
+        justify-content:space-evenly;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    li {
+        font-size: 20px;
+    }
+
+
+    .right {
+        width: 100vw;
+        min-height: 35vh;
+        max-height: 35vh;
+    }
+
+    .image-mobile {
+        display: unset;
+        object-fit: cover;
+        border-radius: 0px 0px 25px 25px;
+        
+        width: 100vw;
+    }
+
+    .image-desktop {
+        display: none;
+    }
+    
 }
