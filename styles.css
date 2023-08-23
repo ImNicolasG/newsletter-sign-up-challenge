@@ -28,9 +28,10 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    
     display: flex;
     justify-content: space-between;
+
+    z-index: 999;
 
 }
 
@@ -250,4 +251,14 @@ h1 {
         display: none;
     }
     
+}
+
+/* Footer */
+/* Using z-index so footer just moves behind form and isnt in the way */
+
+footer {
+    position: absolute;
+    bottom: 13%;
+    left: 43%;
+    z-index: 1;
 }
