@@ -33,7 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ImNicolasG/newsletter-sign-up-challenge)
+- Solution URL: (https://github.com/ImNicolasG/newsletter-sign-up-challenge)
+- Live Site URL: (https://imnicolasg.github.io/newsletter-sign-up-challenge/)
 
 ## My process
 
